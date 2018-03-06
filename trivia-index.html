@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia, y'all!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron text-center" id="welcome-screen">
+          <h1 class="display-3"><strong>Welcome to Memphis, y'all!</strong></h1>
+          <hr class="my-4">
+            <a class="btn btn-danger btn-lg" href="#" role="button" id="btn-start">Start Game!</a>
+        </div>
+    </div>
+  
+    <div class="container" id="quiz-body">
+        
+        <div class="card" id="timer-panel">
+            <div class="card-body">
+                <h2>Time Remaining: <span id="timeLeft"></span></h2>
+            </div>
+        </div>
+        <br>
+        <div class="alert alert-light">
+            <p>1. Which recording studio is the birthplace of Rock ’n Roll?</p>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question1" value="Capitol Studios">
+                    <label class="form-check-label" for="inlineRadio1">Capitol Studios</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question1" value="Sunset Sound Recorders">
+                    <label class="form-check-label" for="inlineRadio1">Sunset Sound Recorders</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question1" value="Sun Studios">
+                    <label class="form-check-label" for="inlineRadio1">Sun Studios</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question1" value="Motown Studios">
+                    <label class="form-check-label" for="inlineRadio1">Motown Studios</label>
+                </div>
+        </div>
+
+        <div class="alert alert-light">
+            <p>2. Which famous street resides in Memphis, TN?</p>
+            
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question2" value="Beale Street">
+                    <label class="form-check-label" for="inlineRadio1">Beale Street</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question2" value="Michigan Avenue">
+                    <label class="form-check-label" for="inlineRadio1">Michigan Avenue</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question2" value="Rodeo Drive">
+                    <label class="form-check-label" for="inlineRadio1">Rodeo Drive</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question2" value="Lombard Street">
+                    <label class="form-check-label" for="inlineRadio1">Lombard Street</label>
+                </div>
+        </div>
+
+        <div class="alert alert-light">
+            <p>3. Name the nation’s first self-service grocery store that opened its doors in Memphis, TN on September 6, 1916.</p>
+            
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question3" value="Publix">
+                    <label class="form-check-label" for="inlineRadio1">Publix</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question3" value="Safeway">
+                    <label class="form-check-label" for="inlineRadio1">Safeway</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question3" value="Ralphs">
+                    <label class="form-check-label" for="inlineRadio1">Ralphs</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question3" value="Piggly Wiggly">
+                    <label class="form-check-label" for="inlineRadio1">Piggly Wiggly</label>
+                </div>
+        </div>
+
+        <div class="alert alert-light">
+            <p>4. What kind of animal lives in luxury at The Peabody, Memphis’ ritziest 5 start hotel?</p>
+            
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question4" value="Ducks">
+                    <label class="form-check-label" for="inlineRadio1">Ducks</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question4" value="Rabbits">
+                    <label class="form-check-label" for="inlineRadio1">Rabbits</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question4" value="Pigeons">
+                    <label class="form-check-label" for="inlineRadio1">Pigeons</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question4" value="Cats">
+                    <label class="form-check-label" for="inlineRadio1">Cats</label>
+                </div>
+        </div>
+
+        <div class="alert alert-light">
+            <p>5. Which NBA team calls Memphis its home?</p>
+            
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question5" value="The Hornets">
+                    <label class="form-check-label" for="inlineRadio1">The Hornets</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question5" value="The Kings">
+                    <label class="form-check-label" for="inlineRadio1">The Kings</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question5" value="The Spurs">
+                    <label class="form-check-label" for="inlineRadio1">The Spurs</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question5" value="The Grizzlies">
+                    <label class="form-check-label" for="inlineRadio1">The Grizzlies</label>
+                </div>
+        </div>
+
+        <div class="alert alert-light">
+            <p>6. Which well-known hospital did Danny Thomas help open in downtown Memphis?</p>
+            
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question6" value="Memorial Sloan Kettering Cancer Center">
+                    <label class="form-check-label" for="inlineRadio1">Memorial Sloan Kettering Cancer Center</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question6" value="Mayo Clinic">
+                    <label class="form-check-label" for="inlineRadio1">Mayo Clinic</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question6" value="St. Jude Children's Research Hospital">
+                    <label class="form-check-label" for="inlineRadio1">St. Jude Children’s Research Hospital</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question6" value="Brigham and Women's Hospital">
+                    <label class="form-check-label" for="inlineRadio1">Brigham and Women’s Hospital</label>
+                </div>
+        </div>
+
+        <div class="alert alert-light">
+            <p>7. What cooking event is held in Memphis every May for the Memphis in May celebration?</p>
+            
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question7" value="Championship Scrapple Cook-Off">
+                    <label class="form-check-label" for="inlineRadio1">Championship Scrapple Cook-Off</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question7" value="World-Championship Barbecue Cooking Contest">
+                    <label class="form-check-label" for="inlineRadio1">World-Championship Barbecue Cooking Contest</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question7" value="The Great Garlic Cook-Off">
+                    <label class="form-check-label" for="inlineRadio1">The Great Garlic Cook-Off</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question7" value="Rockin’ Ribfest">
+                    <label class="form-check-label" for="inlineRadio1">Rockin’ Ribfest</label>
+                </div>
+        </div>
+
+        <div class="alert alert-light">
+            <p>8. In 1952, a massive blaze at the Quaker Oats plant in North Memphis consumed thousands of:</p>
+            
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question8" value="Raisins">
+                    <label class="form-check-label" for="inlineRadio1">Raisins</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question8" value="Brown sugar">
+                    <label class="form-check-label" for="inlineRadio1">Brown sugar</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question8" value="Cereal">
+                    <label class="form-check-label" for="inlineRadio1">Cereal</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question8" value="Corncobs">
+                    <label class="form-check-label" for="inlineRadio1">Corncobs</label>
+                </div>
+        </div>
+
+        <div class="alert alert-light">
+            <p>9. What was the National Civil Rights Museum before it became a museum?</p>
+            
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question9" value="The Pink Palace">
+                    <label class="form-check-label" for="inlineRadio1">The Pink Palace</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question9" value="Lorraine Motel">
+                    <label class="form-check-label" for="inlineRadio1">Lorraine Motel</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question9" value="Overton Park">
+                    <label class="form-check-label" for="inlineRadio1">Overton Park</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question9" value="Orpheum Theater">
+                    <label class="form-check-label" for="inlineRadio1">Orpheum Theater</label>
+                </div>
+        </div>
+
+        <div class="alert alert-light">
+            <p>10. What is the name of Elvis Presley’s home?</p>
+            
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question10" value="Graceland">
+                    <label class="form-check-label" for="inlineRadio1">Graceland</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question10" value="Neverland">
+                    <label class="form-check-label" for="inlineRadio1">Neverland</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question10" value="The Gables">
+                    <label class="form-check-label" for="inlineRadio1">The Gables</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question10" value="The Old Vicarage">
+                    <label class="form-check-label" for="inlineRadio1">The Old Vicarage</label>
+                </div>
+        </div>
+
+        <button type="button" class="btn btn-danger" id="btn-submit">Submit!</button>
+
+        <div class="card" id="results">
+            <div class="card-body">
+                <p>Correct: <span id="correctCount"></span></p>
+                <p>Wrong: <span id="wrongCount"></span></p>
+                <p>Unanswered: <span id="unansweredCount"></span></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+</html>

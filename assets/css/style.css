@@ -1,0 +1,33 @@
+body {
+	background: url("../images/memphismap.jpg");
+}
+
+#welcome-screen {
+	background: url("../images/memphis.png");
+	font-family: Courier, monospace;
+	color: white;
+}
+
+#quiz-body {
+	visibility: hidden;
+	font-family: Courier, monospace;
+}
+
+#results {
+	visibility: hidden;
+}
+
+.alert-light{
+	background-color: #FFA07A;
+	color: black;
+}
+
+p,
+.form-check-inline {
+	color: black;
+}
+
+#results,
+#timer-panel {
+	background-color: #FFA07A;
+}
